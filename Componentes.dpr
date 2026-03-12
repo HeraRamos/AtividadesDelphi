@@ -15,7 +15,7 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('Light');
+  TStyleManager.TrySetStyle('Smokey Quartz Kamri');
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
   Application.CreateForm(TfrmExemplo01, frmExemplo01);
   Application.CreateForm(TfrmAtividade01, frmAtividade01);

@@ -8,21 +8,14 @@ uses
 
 type
   TfrmPrincipal = class(TForm)
-    lbl_sinal: TLabel;
-    lbl_igual: TLabel;
-    btn_soma: TButton;
-    btn_subtrai: TButton;
-    btn_multiplica: TButton;
-    btn_dividir: TButton;
-    edt_n1: TEdit;
-    edt_n2: TEdit;
-    edt_resultado: TEdit;
-    lbl_1: TLabel;
-    lbl_2: TLabel;
-    lbl_3: TLabel;
+    btnExemplo01: TButton;
+    btnAtividade01: TButton;
+    btnExemplo02: TButton;
+    btnAtividade02: TButton;
     procedure btnExemplo01Click(Sender: TObject);
     procedure btnAtividade01Click(Sender: TObject);
-    procedure btnExemplo0Click(Sender: TObject);
+    procedure btnExemplo02Click(Sender: TObject);
+    procedure btnAtividade02Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,7 +29,7 @@ implementation
 
 {$R *.dfm}
 
-uses UExemplo01, UAtividade01, UExemplo02;
+uses UExemplo01, UAtividade01, UExemplo02, UAtividade02;
 
 
 
@@ -45,12 +38,17 @@ begin
   frmAtividade01.ShowModal;
 end;
 
+procedure TfrmPrincipal.btnAtividade02Click(Sender: TObject);
+begin
+  frmAtividade02.ShowModal;
+end;
+
 procedure TfrmPrincipal.btnExemplo01Click(Sender: TObject);
 begin
   frmExemplo01.ShowModal;
 end;
 
-procedure TfrmPrincipal.btnExemplo0Click(Sender: TObject);
+procedure TfrmPrincipal.btnExemplo02Click(Sender: TObject);
 begin
   frmExemplo02.ShowModal;
 end;

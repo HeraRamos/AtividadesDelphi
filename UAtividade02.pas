@@ -27,8 +27,14 @@ type
     btn_soma_alt: TBitBtn;
     btn_subtrai_alt: TBitBtn;
     btn_multiplica_alt: TBitBtn;
+    procedure btn_somaClick(Sender: TObject);
+    procedure btn_soma_altClick(Sender: TObject);
+    procedure btn_subtrai_altClick(Sender: TObject);
+    procedure btn_multiplica_altClick(Sender: TObject);
+    procedure btn_divide_altClick(Sender: TObject);
+    procedure lbl_igual_altClick(Sender: TObject);
   private
-    { Private declarations }
+    n1, n2, resultado : Double;
   public
     { Public declarations }
   end;
@@ -40,5 +46,70 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmAtividade02.btn_divide_altClick(Sender: TObject);
+begin
+  lbl_sinal_alt.Caption := '÷';
+end;
+
+procedure TfrmAtividade02.btn_multiplica_altClick(Sender: TObject);
+begin
+  lbl_sinal_alt.Caption := 'x';
+end;
+
+procedure TfrmAtividade02.btn_somaClick(Sender: TObject);
+begin
+  n1 := StrToFloat(edt_n1.Text);
+  n2 := StrToFloat(edt_n2.Text);
+
+  resultado:= n1 + n2;
+  lbl_sinal.Caption := '+';
+
+//  edt_resultado.Text := FloatToStr(resultado);
+  edt_resultado.Text := FormatFloat('0.00', resultado);
+end;
+
+procedure TfrmAtividade02.btn_soma_altClick(Sender: TObject);
+begin
+  lbl_sinal_alt.Caption := '+';
+end;
+
+procedure TfrmAtividade02.btn_subtrai_altClick(Sender: TObject);
+begin
+   lbl_sinal_alt.Caption := '-';
+end;
+
+procedure TfrmAtividade02.lbl_igual_altClick(Sender: TObject);
+var sinal : String;
+begin
+  sinal := lbl_sinal_alt.Caption;
+
+  n1 := StrToFloat(edt_n1_alt.Text);
+  n2 := StrToFloat(edt_n2_alt.Text);
+
+  if (sinal = '+') then
+  begin
+    resultado:= n1 + n2;
+  end;
+
+  if (sinal = '-') then
+  begin
+    resultado:= n1 - n2;
+  end;
+
+  if (sinal = '÷') then
+  begin
+    resultado:= n1 / n2;
+  end;
+
+  if (sinal = 'x') then
+  begin
+    resultado:= n1 * n2;
+  end;
+
+  edt_resultado_alt.text := FormatFloat('0.00', resultado);
+
+
+end;
 
 end.
