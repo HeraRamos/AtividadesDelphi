@@ -2,8 +2,8 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Exemplo Componentes Aula Delphi'
-  ClientHeight = 441
-  ClientWidth = 624
+  ClientHeight = 407
+  ClientWidth = 612
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,92 +12,49 @@ object frmPrincipal: TfrmPrincipal
   Font.Style = []
   WindowState = wsMaximized
   TextHeight = 30
-  object lbl_sinal: TLabel
-    Left = 154
-    Top = 91
-    Width = 9
-    Height = 30
-    Caption = '?'
-  end
-  object lbl_igual: TLabel
-    Left = 329
-    Top = 91
-    Width = 24
-    Height = 30
-    Caption = '='
-  end
-  object lbl_1: TLabel
-    Left = 56
-    Top = 40
-    Width = 93
-    Height = 30
-    Caption = 'N'#250'mero 1'
-  end
-  object lbl_2: TLabel
-    Left = 220
-    Top = 40
-    Width = 93
-    Height = 30
-    Caption = 'N'#250'mero 2'
-  end
-  object lbl_3: TLabel
-    Left = 415
-    Top = 40
-    Width = 60
-    Height = 30
-    Caption = 'Total'
-  end
-  object edt_n1: TEdit
-    Left = 27
-    Top = 88
-    Width = 121
-    Height = 38
+  object btnExemplo01: TButton
+    Left = 24
+    Top = 24
+    Width = 150
+    Height = 35
+    Caption = 'Exemplo 1'
     TabOrder = 0
+    OnClick = btnExemplo01Click
   end
-  object edt_n2: TEdit
-    Left = 192
-    Top = 88
-    Width = 121
-    Height = 38
+  object btnAtividade01: TButton
+    Left = 256
+    Top = 24
+    Width = 150
+    Height = 35
+    Caption = 'Atividade 1'
     TabOrder = 1
+    OnClick = btnAtividade01Click
   end
-  object edt_resultado: TEdit
-    Left = 384
-    Top = 88
-    Width = 121
-    Height = 38
+  object btnExemplo02: TButton
+    Left = 24
+    Top = 80
+    Width = 150
+    Height = 41
+    Caption = 'Exemplo 2'
     TabOrder = 2
+    OnClick = btnExemplo02Click
   end
-  object btn_soma: TButton
-    Left = 99
-    Top = 145
-    Width = 75
-    Height = 25
-    Caption = '+'
+  object btnAtividade02: TButton
+    Left = 256
+    Top = 80
+    Width = 150
+    Height = 41
+    Caption = 'Atividade 2'
     TabOrder = 3
+    OnClick = btnAtividade02Click
   end
-  object btn_subtrai: TButton
-    Left = 192
-    Top = 145
-    Width = 75
-    Height = 25
-    Caption = '-'
+  object btnAtividade26: TButton
+    Left = 256
+    Top = 144
+    Width = 150
+    Height = 41
+    Caption = 'Atividade 26'
     TabOrder = 4
-  end
-  object btn_multiplica: TButton
-    Left = 303
-    Top = 145
-    Width = 75
-    Height = 25
-    Caption = '*'
-    TabOrder = 5
-  end
-  object btn_dividir: TButton
-    Left = 400
-    Top = 145
-    Width = 75
-    Height = 25
-    Caption = '/'
-    TabOrder = 6
+    OnClick = btnAtividade26Click
   end
 end

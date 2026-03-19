@@ -10,69 +10,73 @@ object frmAtividade02: TfrmAtividade02
   Font.Height = -21
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poScreenCenter
   TextHeight = 30
   object lbl_sinal: TLabel
-    Left = 210
-    Top = 51
+    Left = 200
+    Top = 43
     Width = 9
     Height = 30
     Caption = '?'
   end
   object lbl_igual: TLabel
-    Left = 384
-    Top = 51
+    Left = 381
+    Top = 43
     Width = 14
     Height = 30
     Caption = '='
   end
   object btn_soma: TButton
-    Left = 110
-    Top = 112
+    Left = 107
+    Top = 104
     Width = 75
     Height = 25
     Caption = '+'
     TabOrder = 0
+    OnClick = btn_somaClick
   end
   object edt_n1: TEdit
-    Left = 64
-    Top = 48
+    Left = 61
+    Top = 40
     Width = 121
     Height = 38
+    Alignment = taCenter
     TabOrder = 1
   end
   object edt_n2: TEdit
-    Left = 239
-    Top = 48
+    Left = 236
+    Top = 40
     Width = 121
     Height = 38
     TabOrder = 2
   end
   object edt_resultado: TEdit
-    Left = 426
-    Top = 48
+    Left = 423
+    Top = 40
     Width = 121
     Height = 38
+    ReadOnly = True
     TabOrder = 3
   end
   object btn_subtrai: TBitBtn
-    Left = 216
-    Top = 112
+    Left = 213
+    Top = 104
     Width = 75
     Height = 25
     Caption = '-'
     TabOrder = 4
   end
   object btn_multiplica: TBitBtn
-    Left = 320
-    Top = 112
+    Left = 317
+    Top = 104
     Width = 75
     Height = 25
     Caption = 'x'
     TabOrder = 5
   end
   object btn_divide: TBitBtn
-    Left = 416
-    Top = 112
+    Left = 413
+    Top = 104
     Width = 75
     Height = 25
     Caption = #247
@@ -97,6 +101,7 @@ object frmAtividade02: TfrmAtividade02
       Width = 14
       Height = 30
       Caption = '='
+      OnClick = lbl_igual_altClick
     end
     object btn_divide_alt: TButton
       Left = 384
@@ -105,6 +110,7 @@ object frmAtividade02: TfrmAtividade02
       Height = 25
       Caption = #247
       TabOrder = 0
+      OnClick = btn_divide_altClick
     end
     object edt_n1_alt: TEdit
       Left = 10
@@ -134,6 +140,7 @@ object frmAtividade02: TfrmAtividade02
       Height = 25
       Caption = '+'
       TabOrder = 4
+      OnClick = btn_soma_altClick
     end
     object btn_subtrai_alt: TBitBtn
       Left = 168
@@ -142,6 +149,7 @@ object frmAtividade02: TfrmAtividade02
       Height = 25
       Caption = '-'
       TabOrder = 5
+      OnClick = btn_subtrai_altClick
     end
     object btn_multiplica_alt: TBitBtn
       Left = 270
@@ -150,6 +158,7 @@ object frmAtividade02: TfrmAtividade02
       Height = 25
       Caption = 'x'
       TabOrder = 6
+      OnClick = btn_multiplica_altClick
     end
   end
 end
