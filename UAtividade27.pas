@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TForm1 = class(TForm)
+  TfrmAtividade27 = class(TForm)
     lbl_nome: TLabel;
     edt_Nome: TEdit;
     btn_Media: TButton;
@@ -31,13 +31,13 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmAtividade27: TfrmAtividade27;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.btn_MediaClick(Sender: TObject);
+procedure TfrmAtividade27.btn_MediaClick(Sender: TObject);
 begin
 var
   n1, n2, n3, n4, media: Double;
@@ -53,7 +53,7 @@ begin
 end;
 end;
 
-procedure TForm1.lbl_mediaClick(Sender: TObject);
+procedure TfrmAtividade27.lbl_mediaClick(Sender: TObject);
 begin
   lbl_Resultado.Caption := 'Aluno(a): ' + edt_Nome.Text + sLineBreak +
                           'Média = ' + edt_Media.Text;

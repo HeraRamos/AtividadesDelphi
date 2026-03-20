@@ -1,4 +1,4 @@
-object Form1: TForm1
+object frmAtividade27: TfrmAtividade27
   Left = 0
   Top = 0
   Caption = 'Form1'
