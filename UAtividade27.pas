@@ -55,6 +55,7 @@ end;
 
 procedure TfrmAtividade27.lbl_mediaClick(Sender: TObject);
 begin
+
   lbl_Resultado.Caption := 'Aluno(a): ' + edt_Nome.Text + sLineBreak +
                           'Média = ' + edt_Media.Text;
 end;
