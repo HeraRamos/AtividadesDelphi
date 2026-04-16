@@ -166,6 +166,10 @@
             <Form>frmAtividadeLogin</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UAtividade30.pas">
+            <Form>frmAtividadeSalario</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

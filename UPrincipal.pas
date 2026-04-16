@@ -90,6 +90,4 @@ begin
  frmAtividadeSalario.ShowModal;
 end;
 
-
-
 end.
