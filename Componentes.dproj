@@ -170,6 +170,11 @@
             <Form>frmAtividadeSalario</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UExemplo24.pas"/>
+        <DCCReference Include="UExemplo03.pas">
+            <Form>frmExemplo24</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
