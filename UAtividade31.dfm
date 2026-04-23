@@ -1,7 +1,7 @@
-object frmExemplo24: TfrmExemplo24
+object frmAtividade31: TfrmAtividade31
   Left = 0
   Top = 0
-  Caption = 'Exemplo 24'
+  Caption = 'Atividade 31'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -13,9 +13,10 @@ object frmExemplo24: TfrmExemplo24
   OnShow = FormShow
   TextHeight = 15
   object lblMensagem: TLabel
-    Left = 48
-    Top = 136
-    Width = 513
-    Height = 129
+    Left = 72
+    Top = 80
+    Width = 481
+    Height = 249
+    AutoSize = False
   end
 end
