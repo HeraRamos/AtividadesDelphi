@@ -21,6 +21,10 @@ type
     btnAtividade30: TButton;
     btnAtividade47: TButton;
     btnAtividade48: TButton;
+    btnAtividade49: TButton;
+    btnAtividade50: TButton;
+    btnAtividade51: TButton;
+    btnExemploRelogio: TButton;
     procedure btnExemplo01Click(Sender: TObject);
     procedure btnAtividade01Click(Sender: TObject);
     procedure btnExemplo02Click(Sender: TObject);
@@ -34,6 +38,10 @@ type
     procedure btnAtividade30Click(Sender: TObject);
     procedure btnAtividade47Click(Sender: TObject);
     procedure btnAtividade48Click(Sender: TObject);
+    procedure btnAtividade49Click(Sender: TObject);
+    procedure btnAtividade50Click(Sender: TObject);
+    procedure btnAtividade51Click(Sender: TObject);
+    procedure btnExemploRelogioClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -49,7 +57,8 @@ implementation
 
 uses UExemplo01, UAtividade01, UExemplo02, UAtividade02, UAtividade26,
   UAtividade27, UAtividadeMensagem, UAtividadeMensagens, UAtividade28,
-  UAtividade30, UExemplo03, UAtividade31, UAtividade47, UAtividade48;
+  UAtividade30, UExemplo03, UAtividade31, UAtividade47, UAtividade48,
+  UAtividade49, UAtividade50, UAtividade51, UAtv_52;
 
 
 
@@ -88,6 +97,11 @@ begin
  frmExemplo24.ShowModal;
 end;
 
+procedure TfrmPrincipal.btnExemploRelogioClick(Sender: TObject);
+begin
+ FrmAtv_52.ShowModal;
+end;
+
 procedure TfrmPrincipal.btnAtividadeMensagemClick(Sender: TObject);
 begin
  FrmAtividadeMensagem.ShowModal;
@@ -116,6 +130,22 @@ end;
 procedure TfrmPrincipal.btnAtividade48Click(Sender: TObject);
 begin
 frmAtividade48.ShowModal;
+end;
+
+
+procedure TfrmPrincipal.btnAtividade49Click(Sender: TObject);
+begin
+frmAtividade49.ShowModal;
+end;
+
+procedure TfrmPrincipal.btnAtividade50Click(Sender: TObject);
+begin
+frmAtividade50.ShowModal;
+end;
+
+procedure TfrmPrincipal.btnAtividade51Click(Sender: TObject);
+begin
+frmAtividade51.ShowModal;
 end;
 
 end.
