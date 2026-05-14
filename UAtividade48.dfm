@@ -15,7 +15,7 @@ object frmAtividade48: TfrmAtividade48
   object lblResultado: TLabel
     Left = 48
     Top = 48
-    Width = 513
-    Height = 337
+    Width = 3
+    Height = 15
   end
 end

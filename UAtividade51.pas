@@ -65,7 +65,7 @@ begin
       64
     );
 
-  Close;
+  PostMessage(Self.Handle, WM_CLOSE, 0, 0);
 
 end;
 

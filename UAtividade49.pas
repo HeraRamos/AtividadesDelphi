@@ -63,7 +63,7 @@ begin
     end;
   end;
 
-  Close;
+  PostMessage(Self.Handle, WM_CLOSE, 0, 0);
 
 end;
 

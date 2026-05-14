@@ -53,6 +53,8 @@ begin
   ShowMessage('Soma: ' + IntToStr(soma));
   ShowMessage('Média: ' + FloatToStr(media));
 
-end;
+  PostMessage(Self.Handle, WM_CLOSE, 0, 0);
+
+  end;
 
 end.

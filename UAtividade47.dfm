@@ -15,7 +15,7 @@ object frmAtividade47: TfrmAtividade47
   object lblNumeros: TLabel
     Left = 72
     Top = 56
-    Width = 409
-    Height = 265
+    Width = 3
+    Height = 15
   end
 end

@@ -52,6 +52,7 @@ begin
     ShowMessage('Acesso Negado! Você ultrapassou as 3 tentativas.');
     application.terminate;
 
+    PostMessage(Self.Handle, WM_CLOSE, 0, 0);
 end;
 
 end.

@@ -46,8 +46,12 @@ var
   ShowMessage('Números pares: ' + pares);
   ShowMessage('Números ímpares: ' + impares);
 
-  close;
+  PostMessage(Self.Handle, WM_CLOSE, 0, 0);
+
+
 
   end;
+
+
 
 end.

@@ -22,8 +22,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnExemplo01Click
   end
   object btnAtividade01: TButton
-    Left = 208
-    Top = 8
+    Left = 24
+    Top = 231
     Width = 150
     Height = 50
     Caption = 'Atividade 1'
@@ -40,8 +40,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnExemplo02Click
   end
   object btnAtividade02: TButton
-    Left = 208
-    Top = 64
+    Left = 24
+    Top = 287
     Width = 150
     Height = 49
     Caption = 'Atividade 2'
@@ -49,8 +49,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade02Click
   end
   object btnAtividade26: TButton
-    Left = 208
-    Top = 119
+    Left = 24
+    Top = 342
     Width = 150
     Height = 50
     Caption = 'Atividade 26'
@@ -58,8 +58,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade26Click
   end
   object btnAtividade27: TButton
-    Left = 208
-    Top = 175
+    Left = 27
+    Top = 397
     Width = 150
     Height = 50
     Caption = 'Atividade 27'
@@ -76,8 +76,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividadeMensagemClick
   end
   object btnAtividade28: TButton
-    Left = 208
-    Top = 231
+    Left = 180
+    Top = 341
     Width = 150
     Height = 50
     Caption = 'Atividade 28'
@@ -85,8 +85,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade28Click
   end
   object btnAtividade29: TButton
-    Left = 208
-    Top = 287
+    Left = 180
+    Top = 397
     Width = 150
     Height = 50
     Caption = 'Atividade 29'
@@ -103,17 +103,17 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnExemplo3Click
   end
   object btnAtividade30: TButton
-    Left = 364
-    Top = 8
-    Width = 157
-    Height = 50
+    Left = 180
+    Top = 287
+    Width = 150
+    Height = 48
     Caption = 'Atividade 30'
     TabOrder = 10
     OnClick = btnAtividade30Click
   end
   object btnAtividade47: TButton
-    Left = 364
-    Top = 64
+    Left = 380
+    Top = 8
     Width = 157
     Height = 49
     Caption = 'Atividade 47'
@@ -121,8 +121,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade47Click
   end
   object btnAtividade48: TButton
-    Left = 364
-    Top = 119
+    Left = 380
+    Top = 63
     Width = 157
     Height = 50
     Caption = 'Atividade 48'
@@ -130,8 +130,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade48Click
   end
   object btnAtividade49: TButton
-    Left = 364
-    Top = 175
+    Left = 380
+    Top = 119
     Width = 157
     Height = 50
     Caption = 'Atividade 49'
@@ -139,8 +139,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade49Click
   end
   object btnAtividade50: TButton
-    Left = 364
-    Top = 232
+    Left = 380
+    Top = 175
     Width = 157
     Height = 49
     Caption = 'Atividade 50'
@@ -148,8 +148,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade50Click
   end
   object btnAtividade51: TButton
-    Left = 364
-    Top = 287
+    Left = 380
+    Top = 230
     Width = 157
     Height = 50
     Caption = 'Atividade 51'
@@ -164,5 +164,14 @@ object frmPrincipal: TfrmPrincipal
     Caption = 'Ex Relogio'
     TabOrder = 16
     OnClick = btnExemploRelogioClick
+  end
+  object btnAtividade52: TButton
+    Left = 380
+    Top = 286
+    Width = 157
+    Height = 49
+    Caption = 'Atividade 52'
+    TabOrder = 17
+    OnClick = btnAtividade52Click
   end
 end
