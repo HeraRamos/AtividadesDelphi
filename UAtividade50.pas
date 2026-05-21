@@ -4,11 +4,13 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls;
 
 type
   TfrmAtividade50 = class(TForm)
+    tTempo1: TTimer;
     procedure FormShow(Sender: TObject);
+    procedure tTempo1Timer(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,9 +25,22 @@ implementation
 {$R *.dfm}
 
 procedure TfrmAtividade50.FormShow(Sender: TObject);
+
+begin
+ tTempo1.Interval := 10;
+ tTempo1.Enabled := True;
+
+
+  end;
+
+procedure TfrmAtividade50.tTempo1Timer(Sender: TObject);
+
 var
   numero, contador, fatorial: Integer;
-begin
+
+  begin
+
+  tTempo1.Enabled := False;
 
   numero := StrToInt(
               InputBox(
@@ -52,6 +67,6 @@ begin
 
   PostMessage(Self.Handle, WM_CLOSE, 0, 0);
 
-  end;
+end;
 
 end.
