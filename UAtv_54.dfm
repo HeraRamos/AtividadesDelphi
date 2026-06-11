@@ -318,5 +318,6 @@ object frmAtv_54: TfrmAtv_54
     Font.Style = []
     ParentFont = False
     TabOrder = 6
+    OnClick = btnLimparDadosClick
   end
 end

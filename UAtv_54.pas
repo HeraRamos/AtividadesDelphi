@@ -30,6 +30,7 @@ type
     btnInserirDados: TButton;
     btnLimparDados: TButton;
     procedure btnInserirDadosClick(Sender: TObject);
+    procedure btnLimparDadosClick(Sender: TObject);
   private
 
   contador: Integer;
@@ -179,6 +180,15 @@ begin
     rgpSexo.ItemIndex := -1;
     edtNome.SetFocus;
   end;
+end;
+
+
+procedure TfrmAtv_54.btnLimparDadosClick(Sender: TObject);
+begin
+  edtNome.Clear;
+  edtIdade.Clear;
+  rgpSexo.ItemIndex := -1;
+  edtNome.SetFocus;
 end;
 
 end.
